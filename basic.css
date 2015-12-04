@@ -1,0 +1,325 @@
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+}
+
+header {
+  width: 100%;
+  height: 100px;
+  -webkit-transition: height 0.2s;
+  -moz-transition: height 0.2s;
+  -ms-transition: height 0.2s;
+  -o-transition: height 0.2s;
+  transition: height 0.2s;
+}
+
+#brand h1 {
+  font-family: 'Permanent Marker', cursive;
+  color: #00aabb;
+  }
+
+/*h2 {
+  font-family: 'Permanent Marker', cursive;
+  color: #00aabb;
+  text-align: center;
+  font-size: 18px;
+}*/
+
+header.sticky {
+  position: fixed;
+  height: 60px;
+}
+
+header div#brand{
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  margin-top: 0;
+  text-align: center;
+  font-size: 96px;
+  line-height: 100%;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+header.sticky div#brand{
+  float:left;
+  background-color: black;
+  width: 60%;
+  height: 100%;
+  margin-top: 0;
+  text-align: left;
+  font-size: 48px;
+  line-height: 100%;
+  padding-left: 25px;
+}
+
+header div#menu{
+  display: none;
+  background-color: black;
+  /*border-bottom: 4px solid yellow;*/
+  height: 100%;
+  float: left;
+  -webkit-transition: display 0.2s;
+  -moz-transition: display 0.2s;
+  -ms-transition: display 0.2s;
+  -o-transition: display 0.2s;
+  transition: display 0.2;
+}
+
+header.sticky div#menu{
+  display: inline;
+  width: 40%;   
+}
+
+#menu a {
+  text-decoration: none;
+  cursor: pointer;
+  /*padding: 20px 10px;
+  line-height: 100%;*/
+}
+
+#menu ul {
+  list-style: none;
+  cursor: pointer;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  /*padding: 20px 10px;
+  line-height: 100%;*/
+}
+
+#menu li {
+  text-decoration: none;
+  font-family: 'Permanent Marker', cursive;
+  color: white;
+  display: inline;
+  float: left;
+  margin: 12px;
+  line-height: 100%;
+  font-color: #A10A15;
+}
+
+a.nav {
+  /*margin-right: 10px;*/
+  color: #ffffff;
+  font-size: 24px;
+  letter-spacing: 0;
+  text-decoration: none;
+  text-shadow: 1px 1px 1px #000000;
+  display: block;
+  /*padding: 6px 9px 3px 10px;*/
+  float: left;
+}
+
+a.nav:hover {
+  color: #00aabb;
+  text-decoration: none;
+  display: block;
+  /*background: #FFF000;*/
+  text-shadow: none;
+}
+
+#icons ul {
+  list-style: none;
+  cursor: pointer;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  /*padding: 20px 10px;
+  line-height: 100%;*/
+}
+
+#icons li {
+  display: inline;
+  margin: 10px;
+  line-height: 100%;
+}
+
+/*.socialIcons { 
+vertical-align: center;
+float: left;
+}
+
+.socialIcons:hover {
+opacity: .8;
+filter:alpha(opacity=80); /* For IE8 and earlier 
+}*/
+
+.photo {
+  background-image: url('images/styTown.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  width: 80%;
+  margin: 0 auto;
+  border: 5px solid #00aabb;
+  border-radius: 25px;
+  margin-bottom: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  /*margin-top: 20px;*/
+}
+
+.space1 {
+  height: 600px;
+}
+
+.space2 {
+  height: 600px;
+}
+
+.space3 {
+  height: 600px;
+}
+.capsule {
+  border: 5px solid #00aabb;
+  border-radius: 5px;
+  width: 90%;
+  margin: 0 auto;
+  background-color: white;
+  overflow: auto;
+  zoom: 1;
+}
+
+#album {
+    margin: auto;  
+    margin-top: 10px;
+    height: auto;
+    width: 45%;
+    float: left;
+    text-align: center;
+    float: left;
+}
+
+#albumCover {
+  border: 4px solid black;
+}
+
+#quote {
+  text-align: left;
+  margin: 15px 30px 5px 30px;
+  font-family: "Courier New," Courier, monospace;
+}
+
+#quoteSource {
+  text-align: right;
+  margin-right: 65px;
+  font-family: "Courier New," Courier, monospace;
+}
+
+#apple {
+  margin: auto;
+  margin-top: 20px;
+}
+
+#player {
+  float: left;
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 10px;
+  padding-left: 5px;
+  padding-right:5px;
+}
+
+.tune {
+  display: block;
+  margin-bottom: 20px;
+  border: 2px solid #00aabb;
+  border-radius: 5px;
+}
+
+.tune1 {
+  margin-top: 10px;
+  display: block;
+  margin-bottom: 20px;
+  border: 2px solid #00aabb;
+  border-radius: 5px;
+}
+
+footer {
+  height: 100px;
+  background-color: #00aabb;
+}
+
+/*MOBILE*/
+@media screen and (max-width:760px) {
+  #brand, #icons, #player, #album, header.sticky div#brand, header.sticky div#menu {
+    width: 100%; 
+  }
+  #menu {
+    display: none;
+    width: 100%;
+  }
+  header div#brand {
+    font-size: 64px;
+  }  
+  header.sticky div#icons{
+    float: right;
+    width: 50%;   
+  }
+  .photo {
+    height: 300px;
+  }
+  #albumCover {
+    height: 180px;
+    width: 220px;
+  }
+  #player {
+    display: block;
+  }
+  .tune1 {
+    height: 80px;
+  }
+  .tune {
+    height: 80px;
+  }
+  .space3 {
+    height: auto;
+  }
+  #music {
+    margin-bottom: 20px;
+  }
+}
+
+/*TABLET*/
+@media screen and (min-width: 760px) and (max-width: 980px) {
+  #brand {
+    width: 25%;
+  }
+  #menu {
+    width: 50%;
+    
+  }
+  #icons {
+    width: 25%;
+  }
+  .photo {
+    height: 425px;
+  }
+}
+
+/*DESKTOP and up*/
+@media screen and (min-width: 980px) {
+  #brand {
+    width: 25%;
+    /*border-bottom: 4px solid yellow;*/
+  }
+  #menu {
+    width: 50%;
+    /*border-bottom: 4px solid yellow;*/
+  }
+  #icons {
+    width: 25%;
+    /*border-bottom: 4px solid yellow;*/
+  }
+
