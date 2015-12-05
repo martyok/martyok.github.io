@@ -1,0 +1,452 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700,900,400italic);
+
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  font-family: 'Roboto', sans serif;
+}
+/*HEADER STYLE*/
+header {
+  width: 100%;
+  height: 100px;
+  -webkit-transition: height 0.2s;
+  -moz-transition: height 0.2s;
+  -ms-transition: height 0.2s;
+  -o-transition: height 0.2s;
+  transition: height 0.2s;
+}
+
+#brand h1 {
+  font-family: 'Permanent Marker', cursive;
+  color: #00aabb;
+  }
+
+header.sticky {
+  position: fixed;
+  height: 80px;
+}
+
+header div#brand{
+  width: 100%;
+  text-align: center;
+  font-size: 84px;
+  line-height: 100%;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+header.sticky div#brand{
+  float:left;
+  background-color: black;
+  width: 60%;
+  height: 80px;
+  text-align: left;
+  font-size: 48px;
+  line-height: 100%;
+  padding-left: 36px;
+}
+
+header.sticky div#brand a{
+  text-decoration: none;
+  cursor: pointer;
+  color: #00aabb;
+}
+
+header div#menu{
+  display: none;
+  background-color: black;
+  height: 100%;
+  float: left;
+  -webkit-transition: display 0.2s;
+  -moz-transition: display 0.2s;
+  -ms-transition: display 0.2s;
+  -o-transition: display 0.2s;
+  transition: display 0.2;
+}
+
+header.sticky div#menu{
+  display: inline;
+  width: 40%;   
+}
+
+#menu a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#menu ul {
+  list-style: none;
+  cursor: pointer;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  line-height: 100%;
+}
+
+#menu li {
+  text-decoration: none;
+  font-family: 'Permanent Marker', cursive;
+  color: white;
+  display: inline;
+  float: left;
+  margin: 12px;
+  line-height: 100%;
+  font-color: #A10A15;
+}
+
+a.nav {
+  color: #ffffff;
+  font-size: 24px;
+  letter-spacing: 0;
+  text-decoration: none;
+  text-shadow: 1px 1px 1px #000000;
+  display: block;
+  float: left;
+}
+
+a.nav:hover {
+  color: #00aabb;
+  text-decoration: none;
+  display: block;
+  text-shadow: none;
+}
+/*MAIN PHOTO*/
+.photo {
+  background-image: url('images/styTown.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+  width: 80%;
+  margin: 0 auto;
+  border: 5px solid #00aabb;
+  border-radius: 25px;
+  margin-bottom: 50px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  cursor: pointer;
+}
+/*CAPSULE - used in other divs*/
+.capsule {
+  border: 5px solid #00aabb;
+  border-radius: 5px;
+  width: 90%;
+  margin: 0 auto;
+  background-color: white;
+  overflow: auto;
+  zoom: 1;
+}
+/*NEWS SECTION*/
+#news {
+  margin-bottom: 25px;
+}
+
+#news h2 {
+  text-align: center;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 4em;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#bandphoto {
+  height: 155px;
+  width: 930px;
+  background-image: url('images/collage1.jpg');
+  border: 4px solid black;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#newAlbum {
+  font-family: "Roboto";
+  font-weight: 900;
+}
+
+#video {
+  display: block;
+  margin: 0 auto;
+}
+/*LIVE SECTION*/
+#gig {
+  width: 50%;
+  float:left;
+}
+
+#gig h3 {
+  font-size: 48px;
+  font-weight: 900;
+}
+
+#gig h4 {
+  font-size: 36px;
+  font-weight: 400;
+}
+
+#gig h5 {
+  font-size: 28px;
+  font-weight: 400;
+}
+
+#live {
+  padding: 25px;
+}
+
+#poster {
+  width: 50%;
+  float: left;
+}
+
+#poster img {
+  width: 100%;
+}
+/*MUSIC SECTION*/
+#albumBlurb {
+  clear: both;
+}
+
+#news h3 {
+  text-align: center;
+  margin: 20px;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.space2, .space3 {
+  height: 600px;
+}
+
+#album {
+    margin: auto;  
+    margin-top: 10px;
+    height: auto;
+    width: 45%;
+    text-align: center;
+    float: left;
+}
+
+#album h3 {
+  font-size: 24px;
+  font-weight: 900;
+  margin-bottom: 12px;
+}
+
+#albumCover {
+  border: 4px solid black;
+  margin: 0 auto;
+}
+
+#quote {
+  text-align: left;
+  margin: 15px 30px 5px 30px;
+  font-weight: 400;
+  font-style: italic;
+}
+
+#quoteSource {
+  text-align: right;
+  margin-right: 65px;
+}
+
+#apple {
+  margin-top: 20px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 36px;
+  margin-bottom: 20px;
+}
+
+#player {
+  float: left;
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 10px;
+  padding-left: 5px;
+  padding-right:5px;
+}
+
+.tune {
+  display: block;
+  margin-bottom: 20px;
+  border: 2px solid #00aabb;
+  border-radius: 5px;
+}
+
+.tune1 {
+  margin-top: 10px;
+  display: block;
+  margin-bottom: 20px;
+  border: 2px solid #00aabb;
+  border-radius: 5px;
+}
+/*CONNECT SECTION*/
+footer {
+  height: auto;
+  background-color: #00aabb;
+  text-align: center;
+}
+
+footer h1 {
+  font-family: 'Permanent Marker', cursive;
+  margin-top: 12px;
+  font-size: 36px;
+  color: white;
+}
+
+footer h2 {
+  font-family: 'Courier New', cursive;
+  font-size: 12px;
+  color: white;
+  padding-bottom: 12px;
+}
+
+footer img { 
+  padding: 24px;
+}
+
+footer .socialIcons:hover {
+opacity: .8;
+filter:alpha(opacity=80);  
+}
+
+input {
+      border: 0;
+      padding: 10px;
+      font-size: 18px;
+      border-radius: 5px;
+      margin-bottom: 24px;
+}
+input[type="submit"] {
+      font-family: 'Permanent Marker', cursive;
+      background: black;
+      color: white;
+      border-radius: 5px;
+      margin-bottom: 24px;
+}
+
+/*MOBILE*/
+@media screen and (max-width:760px) {
+  #brand, #icons, #player, #album, header.sticky div#brand, header.sticky div#menu {
+    width: 100%; 
+  }
+  header.sticky div#brand, header.sticky div#menu {
+    height: 40px;
+  }
+  #menu {
+    display: none;
+    width: 100%;
+  }
+  header div#brand {
+    font-size: 64px;
+  }
+  header.sticky div#brand {
+    font-size: 36px;
+  }
+  .photo {
+    height: 300px;
+    background-position: -50px 0px;
+  }
+  #news h2 {
+  font-size: 2em;
+  }
+  .space2 {
+    margin-bottom: 24px;
+  }
+  #gig h3 {
+  font-size: 24px;
+  font-weight: 900;
+  }
+  #gig h4 {
+  font-size: 18px;
+  font-weight: 400;
+  }
+  #gig h5 {
+  font-size: 14px;
+  font-weight: 400;
+  }
+  #albumCover {
+    height: 180px;
+    width: 220px;
+  }
+  #player {
+    display: block;
+  }
+  .tune1, .tune {
+    height: 80px;
+  }
+  .space2, .space3 {
+    height: auto;
+  }
+  #music {
+    margin-bottom: 20px;
+  }
+  #bandphoto {
+    background-image: url('images/collage3.jpg');
+    height: 465px;
+    width: 310px;
+  }
+  #video {
+    height: 300px;
+    width: 375px;
+  }
+}
+
+/*TABLET*/
+@media screen and (min-width: 760px) and (max-width: 1125px) {
+  header.sticky div#brand {
+    width: 40%;
+  }
+  header.sticky div#menu {
+    width: 60%;
+  }
+  .photo {
+    height: 425px;
+  }
+  #bandphoto {
+    background-image: url('images/collage2.jpg');
+    height: 310px;
+    width: 465px;
+  }
+  #albumCover {
+    height: 240px;
+    width: 260px;
+  }
+  .tune1, .tune {
+    height: 150px;
+  }
+  #music {
+    margin-bottom: 25px;
+  }
+  #video {
+    height: 390px;
+    width: 480px;
+  }
+  .space3 {
+    margin-bottom: 42px;
+  }
+}
+
+/*DESKTOP and up*/
+@media screen and (min-width: 1125px) {
+  #brand {
+    width: 25%;
+  }
+  #menu {
+    width: 50%;
+  }
+  #menu li {
+    margin: 24px;
+  }
+  #video {
+    height: 510px;
+    width: 640px;
+  }
+}
+
+
