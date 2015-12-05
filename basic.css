@@ -41,7 +41,7 @@ header div#brand{
   height: 100%;
   margin-top: 0;
   text-align: center;
-  font-size: 96px;
+  font-size: 72px;
   line-height: 100%;
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
@@ -174,13 +174,12 @@ filter:alpha(opacity=80); /* For IE8 and earlier
   height: 600px;
 }
 
-.space2 {
-  height: 600px;
+#news h2 {
+  text-align: center;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 4em;
 }
 
-.space3 {
-  height: 600px;
-}
 .capsule {
   border: 5px solid #00aabb;
   border-radius: 5px;
@@ -189,6 +188,35 @@ filter:alpha(opacity=80); /* For IE8 and earlier
   background-color: white;
   overflow: auto;
   zoom: 1;
+}
+
+#topRow {
+  height: 200px;
+  width: 100%;
+  margin:0 auto;
+}
+
+#bottomRow {
+  height: 200px;
+  width: 100%;
+  margin:0 auto;
+}
+
+.bandphoto {
+  height: 155px;
+  width: 155px;
+  /*border: 4px solid black;*/
+  float: left;
+  display: inline-block;
+  margin: 4px;
+}
+
+.space2 {
+  height: 600px;
+}
+
+.space3 {
+  height: 600px;
 }
 
 #album {
@@ -298,14 +326,16 @@ footer {
   }
   #menu {
     width: 50%;
-    
-  }
-  #icons {
-    width: 25%;
   }
   .photo {
     height: 425px;
   }
+  /*.bandphoto:first-child {
+  margin-left: 6em;
+  }
+  .bandphoto:last-child {
+  margin-right: 6em;
+  }*/
 }
 
 /*DESKTOP and up*/
@@ -318,8 +348,20 @@ footer {
     width: 50%;
     /*border-bottom: 4px solid yellow;*/
   }
-  #icons {
-    width: 25%;
-    /*border-bottom: 4px solid yellow;*/
+  #topRow, #bottomRow {
+    float: left;
   }
+  .bandphoto {
+    margin: 18px;
+  }
+  #topRow {
+  height: 200px;
+  width: 50%;
+  }
+  #bottomRow {
+  height: 200px;
+  width: 50%;
+  }
+}
+
 
