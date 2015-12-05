@@ -17,9 +17,6 @@
 
 <script>
 $(document).ready(function(){
-    $(document).scroll(function() {
-    console.log($(document).scrollTop());
-    });
 
     // Sticky header
 
@@ -40,7 +37,7 @@ $(document).ready(function(){
         var $target = $(target);
 
         $('html, body').stop().animate({
-            'scrollTop': $target.offset().top - 50
+            'scrollTop': $target.offset().top - 80
         }, 'slow', function () {
             window.location.hash = target;
         });
@@ -91,42 +88,54 @@ $(document).ready(function(){
     <div id="bandphoto">
     </div>
     <div id="albumBlurb">
-    <h3>The new album by Big Wake &#8212; Coming 2016</h3>
-    <h4>Here's a live preview of one of the new tracks, "Turning Around":</h4>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/GwNEekOSsz8" frameborder="0" allowfullscreen></iframe>
-    <p>For updates and exclusive content, sign the <a href="#connect">mailing list.</a></p>
+    <h3><strong>The new album by Big Wake &#8212; Coming 2016</strong></h3>
+    <h3>Here's a live preview of one of the new tracks, "Turning Around":</h3>
+    <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/GwNEekOSsz8" frameborder="0" allowfullscreen margin="0 auto"></iframe>
+    <h3>For updates and exclusive content, sign the <a href="#connect">mailing list.</a></h3>
     </div>
     </section>
     </div>
-    <div id="live" class="space2">
-    <section class="capsule">
-        <p>Saturday, December 5 10PM</p>
-        <p>Finnegan's Irish Pub<p>
-        <p>734 Willow Ave, Hoboken, NJ 07030</p>
-        <a href="http://www.finneganshoboken.com/" target="_blank"><p>finneganshoboken.com</p></a>
-        <p>21+</p>
+    <div class="space2">
+    <section id="live" class="capsule">
+        <div id="gig">
+        <h4>Saturday, December 5 10:00 PM</h4>
+        <h3>Finnegan's Irish Pub<h3>
+        <h4>734 Willow Ave, Hoboken, NJ 07030</h4>
+        <a href="http://www.finneganshoboken.com/" target="_blank"><h4>finneganshoboken.com</h4></a>
+        <h5>21+ to enter</h5>
+        </div>
+        <div id="poster">
+            <img src="images/finnegans.jpg" />
+        </div>
     </section>
     </div>
     <div id="music" class="space3">
     <section class="capsule"> 
         <div id="album">
+        <h3>The debut album by Big Wake</h3>
         <img id="albumCover" src="images/albumcover.jpg" alt="album cover" width="330" height="270">
-        <p id="quote">"As the listener journeys through, it becomes increasingly clear that the album is one of astonishing subtleties and surprises. From the unassuming guitar overlays during the piano-driven verses of "Follow the Signs" to the screaming electric guitars in the intro of the deceptively light-hearted and tender Letter to Me, there exists treats for the listener around every turn."</p>
+        <p id="quote">"As the listener journeys through, it becomes increasingly clear that the album is one of astonishing subtleties and surprises. From the unassuming guitar overlays during the piano-driven verses of "Follow the Signs" to the screaming electric guitars in the intro of the deceptively light-hearted and tender "Letter to Me", there exists treats for the listener around every turn."</p>
             <p id="quoteSource">&#8212;Wordplay</p> 
-        <a id="apple" href="https://geo.itunes.apple.com/us/album/big-wake/id460403294?mt=1&app=music" style="display:inline-block;overflow:hidden;background:url(http://linkmaker.itunes.apple.com/images/badges/en-us/badge_music-lrg.svg) no-repeat;width:165px;height:40px;" target="_blank"></a>    
+        <div id="apple">
+        <a href="https://geo.itunes.apple.com/us/album/big-wake/id460403294?mt=1&app=music" style="display:inline-block;overflow:hidden;background:url(http://linkmaker.itunes.apple.com/images/badges/en-us/badge_music-lrg.svg) no-repeat;width:165px;height:40px;" target="_blank"></a>
+        </div>   
         </div>
         <div id="player">
         <iframe class="tune1" width="100%" height="150" scrolling="no" frameborder="yes" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/27458001&amp;color=00aabb&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_artwork=false"></iframe>
         <iframe class="tune" width="100%" height="150" scrolling="no" frameborder="yes" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/27458006&amp;color=00aabb&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_artwork=false"></iframe>
         <iframe class="tune" width="100%" height="150" scrolling="no" frameborder="yes" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/27458008&amp;color=00aabb&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_artwork=false"></iframe> 
         </div> <!-- closes player -->
-        </section> <!-- closes musicCell -->
+        </section> <!-- closes capsule -->
     </div> <!-- closes music -->
 	<footer id="connect">
-        <li><a class="socialIcons" href="https://www.facebook.com/bigwakemusic/" title="Like" alt="Big Wake Facebook Icon" target="_blank"><img src="icons/facebook-32.png" /></a></li>
-                 <li><a class="socialIcons" href="https://twitter.com/bigwakemusic" title="Follow" alt="Big Wake Twitter Icon" target="_blank"><img src="icons/twitter-32.png" /></a></li>
-                 <li><a class="socialIcons" href="https://www.instagram.com/gerryrosenthal" title="Look" alt="Big Wake Instagram Icon" target="_blank"><img src="icons/instagram-32.png" /></a></li>
-                <li> <a class="socialIcons" href="https://www.youtube.com/user/bigwakemusic" title="Watch" alt="Big Wake YouTube Icon" target="_blank"><img src="icons/youtube-32.png" /></a></li> 
+        <h1>Big Wake</h1>
+            <a class="socialIcons" href="https://www.facebook.com/bigwakemusic/" title="Like" alt="Big Wake Facebook Icon" target="_blank"><img src="icons/facebook-32.png" /></a>
+            <a class="socialIcons" href="https://twitter.com/bigwakemusic" title="Follow" alt="Big Wake Twitter Icon" target="_blank"><img src="icons/twitter-32.png" /></a>
+            <a class="socialIcons" href="https://www.instagram.com/gerryrosenthal" title="Look" alt="Big Wake Instagram Icon" target="_blank"><img src="icons/instagram-32.png" /></a>
+            <a class="socialIcons" href="https://www.youtube.com/user/bigwakemusic" title="Watch" alt="Big Wake YouTube Icon" target="_blank"><img src="icons/youtube-32.png" /></a><br>
+        <input type="email" placeholder="Your Email">
+        <input type="submit"> 
+        <h2>&copy; 2016 Big Wake. Design by martyok.<h2>    
     </footer>    
     </body>
 </html>
