@@ -14,11 +14,11 @@ body {
 header {
   width: 100%;
   height: 100px;
-  -webkit-transition: height 0.2s;
-  -moz-transition: height 0.2s;
-  -ms-transition: height 0.2s;
-  -o-transition: height 0.2s;
-  transition: height 0.2s;
+  -webkit-transition: height 0.1s;
+  -moz-transition: height 0.1s;
+  -ms-transition: height 0.1s;
+  -o-transition: height 0.1s;
+  transition: height 0.1s;
 }
 
 #brand h1 {
@@ -36,11 +36,11 @@ header div#brand{
   text-align: center;
   font-size: 84px;
   line-height: 100%;
-  -webkit-transition: all 0.2s;
-  -moz-transition: all 0.2s;
-  -ms-transition: all 0.2s;
-  -o-transition: all 0.2s;
-  transition: all 0.2s;
+  -webkit-transition: all 0.1s;
+  -moz-transition: all 0.1s;
+  -ms-transition: all 0.1s;
+  -o-transition: all 0.1s;
+  transition: all 0.1s;
 }
 
 header.sticky div#brand{
@@ -64,17 +64,23 @@ header div#menu{
   display: none;
   background-color: black;
   height: 100%;
-  float: left;
-  -webkit-transition: display 0.2s;
-  -moz-transition: display 0.2s;
-  -ms-transition: display 0.2s;
-  -o-transition: display 0.2s;
-  transition: display 0.2;
+  width: 40%;
+  float: right;
+  opacity: 0;
+  -webkit-transition: opacity 0.8s;
+  -moz-transition: opacity 0.8s
+  -ms-transition: opacity 0.8s;
+  -o-transition: opacity 0.8s;
+  transition: opacity 0.8s;
 }
 
 header.sticky div#menu{
+  background-color: black;
+  opacity: 1;
   display: inline;
-  width: 40%;   
+  width: 40%;
+  float: right; 
+  height: 100%;  
 }
 
 #menu a {

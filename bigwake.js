@@ -1,12 +1,14 @@
 $(document).ready(function(){
-
+        $('#menu').hide();
     // Sticky header
 
     $(window).scroll(function() {
          if ($(document).scrollTop() > 72) {
              $('header').addClass("sticky");
+             $('#menu').show(1);
             } else {
-             $('header').removeClass("sticky");  
+             $('header').removeClass("sticky"); 
+             $('#menu').hide(1); 
             }
          });
 
