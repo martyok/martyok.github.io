@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700,900,400italic);
+
 * {
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
@@ -6,6 +8,7 @@
 
 body {
   background-color: black;
+  font-family: 'Roboto', sans serif;
 }
 
 header {
@@ -51,12 +54,11 @@ header.sticky div#brand{
   float:left;
   background-color: black;
   width: 60%;
-  height: 100%;
-  margin-top: 0;
+  height: 80px;
   text-align: left;
   font-size: 48px;
   line-height: 100%;
-  padding-left: 25px;
+  padding-left: 36px;
 }
 
 header.sticky div#brand a{
@@ -127,23 +129,6 @@ a.nav:hover {
   text-shadow: none;
 }
 
-/*#icons ul {
-  list-style: none;
-  cursor: pointer;
-  text-align: center;
-  padding: 0;
-  margin: 0;
-  text-align: center;*/
-  /*padding: 20px 10px;
-  line-height: 100%;*/
-/*}
-
-#icons li {
-  display: inline;
-  margin: 10px;
-  line-height: 100%;
-}*/
-
 .photo {
   background-image: url('images/styTown.jpg');
   background-repeat: no-repeat;
@@ -156,7 +141,7 @@ a.nav:hover {
   margin-bottom: 50px;
   -webkit-border-radius: 25px;
   -moz-border-radius: 25px;
-  /*margin-top: 20px;*/
+  cursor: pointer;
 }
 
 #news {
@@ -191,8 +176,9 @@ a.nav:hover {
 
 #news h3 {
   text-align: center;
-  font-family: "Courier New";
   margin: 20px;
+  font-weight: 700;
+  font-size: 24px;
 }
 
 .capsule {
@@ -212,6 +198,11 @@ a.nav:hover {
   border: 4px solid black;
   margin-left: auto;
   margin-right: auto;
+}
+
+#newAlbum {
+  font-family: "Roboto";
+  font-weight: 900;
 }
 
 #video {
@@ -239,6 +230,21 @@ a.nav:hover {
   height: 600px;
 }
 
+#gig h3 {
+  font-size: 48px;
+  font-weight: 900;
+}
+
+#gig h4 {
+  font-size: 36px;
+  font-weight: 400;
+}
+
+#gig h5 {
+  font-size: 28px;
+  font-weight: 400;
+}
+
 #album {
     margin: auto;  
     margin-top: 10px;
@@ -246,6 +252,12 @@ a.nav:hover {
     width: 45%;
     text-align: center;
     float: left;
+}
+
+#album h3 {
+  font-size: 24px;
+  font-weight: 900;
+  margin-bottom: 12px;
 }
 
 #albumCover {
@@ -256,13 +268,13 @@ a.nav:hover {
 #quote {
   text-align: left;
   margin: 15px 30px 5px 30px;
-  font-family: "Courier New";
+  font-weight: 400;
+  font-style: italic;
 }
 
 #quoteSource {
   text-align: right;
   margin-right: 65px;
-  font-family: "Courier New";
 }
 
 #apple {
@@ -305,7 +317,7 @@ footer {
 
 footer h1 {
   font-family: 'Permanent Marker', cursive;
-  padding: 12px;
+  margin-top: 12px;
   font-size: 36px;
   color: white;
 }
@@ -364,7 +376,22 @@ input[type="submit"] {
   }
   #news h2 {
   font-size: 3em;
-}
+  }
+  .space2 {
+    margin-bottom: 24px;
+  }
+  #gig h3 {
+  font-size: 24px;
+  font-weight: 900;
+  }
+  #gig h4 {
+  font-size: 18px;
+  font-weight: 400;
+  }
+  #gig h5 {
+  font-size: 14px;
+  font-weight: 400;
+  }
   #albumCover {
     height: 180px;
     width: 220px;
@@ -372,10 +399,7 @@ input[type="submit"] {
   #player {
     display: block;
   }
-  .tune1 {
-    height: 80px;
-  }
-  .tune {
+  .tune1, .tune {
     height: 80px;
   }
   .space2, .space3 {
@@ -396,12 +420,12 @@ input[type="submit"] {
 }
 
 /*TABLET*/
-@media screen and (min-width: 760px) and (max-width: 980px) {
-  #brand {
-    width: 25%;
+@media screen and (min-width: 760px) and (max-width: 1125px) {
+  header.sticky div#brand {
+    width: 40%;
   }
-  #menu {
-    width: 50%;
+  header.sticky div#menu {
+    width: 60%;
   }
   .photo {
     height: 425px;
@@ -411,33 +435,35 @@ input[type="submit"] {
     height: 310px;
     width: 465px;
   }
-  .space3 {
-    height: auto;
+  #albumCover {
+    height: 240px;
+    width: 260px;
+  }
+  .tune1, .tune {
+    height: 150px;
+  }
+  #music {
+    margin-bottom: 25px;
   }
   #video {
     height: 390px;
     width: 480px;
   }
+  .space3 {
+    margin-bottom: 42px;
+  }
 }
 
 /*DESKTOP and up*/
-@media screen and (min-width: 980px) {
+@media screen and (min-width: 1125px) {
   #brand {
     width: 25%;
-    /*border-bottom: 4px solid yellow;*/
   }
   #menu {
     width: 50%;
-    /*border-bottom: 4px solid yellow;*/
   }
   #menu li {
     margin: 24px;
-  }
-  #topRow, #bottomRow {
-    float: left;
-  }
-  #topRow, #middleRow, #bottomRow  {
-  width: 33%;
   }
   #video {
     height: 510px;
